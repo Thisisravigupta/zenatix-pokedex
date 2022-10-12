@@ -1,0 +1,100 @@
+.cards_in_app {
+  border-radius: 20px;
+}
+
+.card_img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.pokemon_title {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 15px;
+  text-transform: capitalize;
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  color: #32adf4;
+  font-size: 20px;
+}
+
+.pokemon_title > p:nth-child(2) {
+  font-size: 15px;
+}
+
+.card_img img {
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+  padding: 10px;
+  position: relative;
+  transform: translate3d(0px, -1px, 10px);
+}
+
+.pokemon_desc {
+  padding: 0;
+}
+
+.pokemon_desc > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list > li:nth-child(1) {
+  width: 40%;
+}
+
+.list > li {
+  width: 30%;
+}
+
+.sublist {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.sublist li:nth-child(1) {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #32adf4;
+}
+
+.sublist li:nth-child(2) {
+  color: black;
+  font-size: 12px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.info_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_btn > button {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all ease-in;
+  background-color: #32adf4;
+  padding: 20px;
+}

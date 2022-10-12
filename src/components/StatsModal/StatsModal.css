@@ -1,0 +1,162 @@
+.modal_wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.modal_wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 0;
+  z-index: -1;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.btn-close {
+  color: red;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-title {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  transform: translate(-50%);
+  width: 200px;
+}
+
+.modal-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.pokemon_stats {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pokeball_bg {
+  position: absolute;
+  left: 70%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  width: 400px;
+}
+
+.img_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.pokemonImg {
+  height: 250px !important;
+  position: absolute;
+  right: 100px;
+  top: 80px;
+}
+.stats_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.stats_list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
+.stats_list li {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.pokemon_stats h4 {
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.stats_sublist {
+  padding-left: 0px;
+}
+
+.stats_sublist_propertie {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+.stats_sublist_value {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+.progress {
+  height: 13px !important;
+  width: 50%;
+}
+
+.stats_with_rank ul {
+  padding-left: 0;
+}
+
+.stats_with_rank ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 35px;
+}
+
+.stats_with_rank ul li:nth-child(1),
+.stats_with_rank ul li:nth-child(2),
+.stats_with_rank ul li:nth-child(3),
+.stats_with_rank ul li:nth-child(4) {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.abilities ul {
+  display: flex;
+  padding-left: 0px;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+}
+
+.abilities ul li {
+  text-transform: capitalize;
+  list-style: none;
+  position: relative;
+  font-weight: 700;
+}
+
+.abilities ul li:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  font-weight: 700;
+  right: -50%;
+  top: 0;
+  transform: translate(-50%);
+}

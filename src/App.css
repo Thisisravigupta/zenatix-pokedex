@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600&display=swap");
+
+.Main {
+  background-color: #32adf4;
+}
+
+.cards_in_app {
+  background-color: #dfe6e9;
+  transition: 0.6s top ease-in-out;
+  position: relative;
+  top: 0;
+}
+.cards_in_app:hover {
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+  transition: 0.2s top ease-in-out;
+}
+
+.main_wrapper {
+  padding: 0px 50px !important;
+}
+
+.search_bar input,
+.type select {
+  border-radius: 0px;
+  outline: none;
+  border: none;
+}
+
+.search_bar input:focus {
+  outline: none;
+  border: none;
+}
+.pagination_btn {
+  padding: 0px 100px;
+}
+
+.pagination_btn button {
+  border-radius: 0px;
+  background-color: #0573b3;
+  border: 0px;
+  color: #161122;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
